@@ -6,9 +6,22 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <section>
+    <h1 class="color-0">mqtt broker</h1>
+    <br>
+    <p class="color-1">free for your IoT devices</p>
+    <div class="cloud">
+      <div class="cloudcontent">
+      </div>
+        <img src="cloud1.png" alt="" class="cloud1">
+        <img src="cloud2.png" alt="" class="cloud2">
+        <img src="cloud3.png" alt="" class="cloud3">
+    </div>
+    <br>
+    <br>
+    
+<section>
         <form>
-            <h1>Login</h1>
+            <h2>Login</h2>
             <div class="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
                 <input type="email" required>
@@ -17,17 +30,26 @@
             <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <input type="password" required>
-                <label for="">Password</label>
+                <label for="">Token</label>
             </div>
-            <div class="forget">
-                <label for=""><input type="checkbox">Remember Me</label>
-              <a href="#">Forget Password</a>
+            
+            <button class="knopka">Log in</button>
+
+            <br>
+            <br>
+
+            <div>
+                <button class="knopka">
+                  <a class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" href="https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=5ca346d4a17b4488abf937d0fe1e2705&amp;redirect_url=https://node.polmir.ru/mqtt/yandex/callback&amp;scope=login:email+login:info&amp;optional_scope=login:birthday+login:avatar&amp;state=bc421969ad6bf72eedf02c1678a626849e69783e1ecc3b95490c9b905a152bd4">Sign up with Yandex</a>
+                </button>
             </div>
-            <button>Log in</button>
-            <div class="register">
-                <p>Don't have a account <a href="#">Register</a></p>
+            <br>
+            <div>
+                <button class="knopka">
+                  <a class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" href="https://github.com/login/oauth/authorize?response_type=code&amp;client_id=5474af64812afa077e49&amp;redirect_url=https://node.polmira.ru/mqtt/github/callback&amp;scope=read:user%20user:email&amp;state=d45e89700637d6dc20c868c87bb160b11c5a776ec45fdd0813171190c9e2d3a3">Sign up with GitHub</a>
+                </button>
             </div>
         </form>
-    </section>
+</section>
 </body>
 </html>
